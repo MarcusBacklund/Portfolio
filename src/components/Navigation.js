@@ -1,5 +1,7 @@
 import React from 'react';
 import '../App.css';
+import '../mobilenav.js';
+import '../mobilenav.css';
 import logo from '../logo-new.svg';
  
 import { NavLink } from 'react-router-dom';
@@ -14,6 +16,15 @@ const Navigation = () => {
                <NavLink to="/Projects">Projects</NavLink>
                <NavLink to="/Contact">Contact</NavLink>
             </div>
+            <button id="btn" className="btn">☰</button>
+
+            <nav id="nav">
+            <ul>
+                <li><NavLink to="/">Home</NavLink></li>
+                <li><NavLink to="/Projects">Projects</NavLink></li>
+                <li><NavLink to="/Contact">Contact</NavLink></li>
+            </ul>
+        </nav>
          </div>
       </div>
     );
