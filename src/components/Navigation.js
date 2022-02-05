@@ -16,6 +16,13 @@ const Navigation = () => {
                <NavLink to="/Projects">Projects</NavLink>
                <NavLink to="/Contact">Contact</NavLink>
             </div>
+
+            <p style={{paddingRight: 20}}>Dark mode</p>
+            <label class="switch">
+                    <input type="checkbox" />
+                <span class="slider round"></span>
+            </label>
+
             <button id="btn" className="btn">☰</button>
 
             <nav id="nav">
